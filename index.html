@@ -20,7 +20,6 @@
         <a href="#about">About</a>
         <a href="#services">Diamonds</a>
         <a href="#gallery">Gallery</a>
-        <a href="#calculator">Estimator</a>
         <a href="#contact" class="nav-button">Contact</a>
       </div>
     </nav>
@@ -36,7 +35,7 @@
 
         <div class="hero-buttons">
           <a class="button primary" href="https://wa.me/66816280370">Contact on WhatsApp</a>
-          <a class="button secondary" href="#calculator">Estimate Diamond Price</a>
+          <a class="button secondary" href="#services">View Services</a>
         </div>
 
         <div class="hero-stats">
@@ -107,6 +106,11 @@
         </div>
 
         <div class="card">
+          <h3>Certified Diamonds</h3>
+          <p>Certified diamonds are available depending on the client’s requirements and availability.</p>
+        </div>
+
+        <div class="card">
           <h3>Custom Sourcing</h3>
           <p>Tell us your preferred shape, size, color, clarity, certificate preference, and budget.</p>
         </div>
@@ -114,11 +118,6 @@
         <div class="card">
           <h3>Wholesale & Trade</h3>
           <p>We work with jewelers, retailers, wholesalers, and trade clients looking for reliable diamond sourcing in Bangkok.</p>
-        </div>
-
-        <div class="card">
-          <h3>Private Appointments</h3>
-          <p>Visits are available by appointment only for serious inquiries and sourcing discussions.</p>
         </div>
       </div>
     </section>
@@ -180,74 +179,6 @@
       </div>
     </section>
 
-    <section class="section calculator-section" id="calculator">
-      <p class="eyebrow">Diamond Price Estimator</p>
-      <h2>Approximate Retail Price Tool</h2>
-
-      <p>
-        Use this simple tool to estimate an approximate retail price range for a natural diamond. This is not a final quote. Actual pricing depends on market availability, certificate, cut, polish, symmetry, fluorescence, and stone-specific details.
-      </p>
-
-      <div class="calculator-box">
-        <div class="input-grid">
-          <label>
-            Shape
-            <select id="shape">
-              <option value="round">Round</option>
-              <option value="oval">Oval</option>
-              <option value="emerald">Emerald</option>
-              <option value="pear">Pear</option>
-              <option value="cushion">Cushion</option>
-              <option value="princess">Princess</option>
-              <option value="radiant">Radiant</option>
-              <option value="marquise">Marquise</option>
-              <option value="heart">Heart</option>
-            </select>
-          </label>
-
-          <label>
-            Carat Size
-            <input id="carat" type="number" min="0.30" max="10" step="0.01" value="1.00">
-          </label>
-
-          <label>
-            Color
-            <select id="color">
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-              <option value="G">G</option>
-              <option value="H" selected>H</option>
-              <option value="I">I</option>
-              <option value="J">J</option>
-              <option value="K">K</option>
-              <option value="L">L</option>
-              <option value="M">M</option>
-            </select>
-          </label>
-
-          <label>
-            Clarity
-            <select id="clarity">
-              <option value="IF">IF</option>
-              <option value="VVS1">VVS1</option>
-              <option value="VVS2">VVS2</option>
-              <option value="VS1">VS1</option>
-              <option value="VS2" selected>VS2</option>
-              <option value="SI1">SI1</option>
-              <option value="SI2">SI2</option>
-            </select>
-          </label>
-        </div>
-
-        <button class="button primary calc-button" onclick="calculateDiamond()">Calculate Estimate</button>
-
-        <div id="result" class="result-box">
-          Select diamond details and calculate an approximate retail estimate.
-        </div>
-      </div>
-    </section>
-
     <section class="section clients-section">
       <p class="eyebrow">Who We Work With</p>
       <h2>Private Buyers, Jewelers, Retailers & Wholesalers</h2>
@@ -294,101 +225,5 @@
     <p>© 2026 Noble Gems International Co.,Ltd. All rights reserved.</p>
   </footer>
 
-  <script>
-function calculateDiamond() {
-  var shape = document.getElementById("shape").value;
-  var carat = parseFloat(document.getElementById("carat").value);
-  var color = document.getElementById("color").value;
-  var clarity = document.getElementById("clarity").value;
-  var result = document.getElementById("result");
-
-  if (!carat || carat <= 0) {
-    result.innerHTML = "Please enter a valid carat size.";
-    return;
-  }
-
-  var basePerCarat;
-
-  if (carat < 0.5) {
-    basePerCarat = 1800;
-  } else if (carat < 0.75) {
-    basePerCarat = 2600;
-  } else if (carat < 1.0) {
-    basePerCarat = 3800;
-  } else if (carat < 1.5) {
-    basePerCarat = 6500;
-  } else if (carat < 2.0) {
-    basePerCarat = 9500;
-  } else if (carat < 3.0) {
-    basePerCarat = 14500;
-  } else if (carat < 5.0) {
-    basePerCarat = 24000;
-  } else {
-    basePerCarat = 38000;
-  }
-
-  var shapeMultipliers = {
-    round: 1.00,
-    oval: 0.85,
-    emerald: 0.82,
-    pear: 0.84,
-    cushion: 0.82,
-    princess: 0.80,
-    radiant: 0.84,
-    marquise: 0.83,
-    heart: 0.82
-  };
-
-  var colorMultipliers = {
-    D: 1.32,
-    E: 1.24,
-    F: 1.16,
-    G: 1.08,
-    H: 1.00,
-    I: 0.88,
-    J: 0.78,
-    K: 0.66,
-    L: 0.56,
-    M: 0.48
-  };
-
-  var clarityMultipliers = {
-    IF: 1.42,
-    VVS1: 1.30,
-    VVS2: 1.20,
-    VS1: 1.10,
-    VS2: 1.00,
-    SI1: 0.82,
-    SI2: 0.65
-  };
-
-  var estimatedPrice =
-    basePerCarat *
-    carat *
-    shapeMultipliers[shape] *
-    colorMultipliers[color] *
-    clarityMultipliers[clarity];
-
-  var lowEstimate = estimatedPrice * 0.82;
-  var highEstimate = estimatedPrice * 1.18;
-
-  var formatUSD = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    maximumFractionDigits: 0
-  });
-
-  var shapeName = shape.charAt(0).toUpperCase() + shape.slice(1);
-
-  result.innerHTML =
-    "<strong>Approximate Retail Estimate:</strong><br>" +
-    formatUSD.format(lowEstimate) + " - " + formatUSD.format(highEstimate) +
-    "<br><br>" +
-    "<strong>Selected Diamond:</strong><br>" +
-    carat.toFixed(2) + " ct " + shapeName + ", " + color + " color, " + clarity + " clarity" +
-    "<br><br>" +
-    "<small>This is a rough educational estimate only. Actual pricing may vary based on cut, polish, symmetry, fluorescence, certificate, measurements, availability, and current market conditions. Contact Noble Gems International Co.,Ltd for a real sourcing quote.</small>";
-}
-</script>
 </body>
 </html>
