@@ -124,7 +124,7 @@ a {
 .secondary {
   border: 1px solid rgba(135, 98, 29, 0.24);
   color: #4b3511;
-  background: rgba(255,255,255,0.72);
+  background: rgba(255, 255, 255, 0.72);
   font-weight: 700;
 }
 
@@ -139,7 +139,7 @@ a {
   min-width: 150px;
   padding: 18px;
   border: 1px solid rgba(175, 132, 45, 0.22);
-  background: rgba(255,255,255,0.72);
+  background: rgba(255, 255, 255, 0.72);
   border-radius: 20px;
   box-shadow: 0 18px 45px rgba(70, 46, 12, 0.08);
 }
@@ -160,7 +160,7 @@ a {
   position: relative;
   padding: 14px;
   border-radius: 34px;
-  background: rgba(255,255,255,0.75);
+  background: rgba(255, 255, 255, 0.75);
   border: 1px solid rgba(175, 132, 45, 0.22);
   box-shadow: 0 35px 100px rgba(70, 46, 12, 0.14);
 }
@@ -180,7 +180,7 @@ a {
   right: 32px;
   padding: 22px;
   border-radius: 24px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(175, 132, 45, 0.22);
   box-shadow: 0 18px 45px rgba(70, 46, 12, 0.16);
 }
@@ -249,7 +249,7 @@ a {
 .gallery-card,
 .calculator-box,
 .contact-box {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(175, 132, 45, 0.20);
   border-radius: 26px;
   box-shadow: 0 24px 70px rgba(70, 46, 12, 0.08);
