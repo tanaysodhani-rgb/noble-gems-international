@@ -10,13 +10,6 @@ function calculateDiamond() {
     return;
   }
 
-  /*
-    Simple approximate natural diamond retail estimator.
-    This is not a market quote.
-    It uses rough 2026-style retail ranges for natural diamonds
-    and adjusts by shape, color, clarity, and carat.
-  */
-
   let basePerCarat;
 
   if (carat < 0.5) {
