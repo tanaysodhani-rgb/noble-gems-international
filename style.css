@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: Inter, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   color: #1f1c16;
   background: #fbf7ef;
   line-height: 1.7;
@@ -23,30 +23,7 @@ a {
 .hero {
   min-height: 100vh;
   padding: 30px 8%;
-  background:
-    radial-gradient(circle at 12% 15%, rgba(217, 178, 92, 0.28), transparent 34%),
-    radial-gradient(circle at 90% 18%, rgba(255, 255, 255, 0.95), transparent 30%),
-    linear-gradient(135deg, #fffaf0 0%, #f7ead2 45%, #ffffff 100%);
-  position: relative;
-  overflow: hidden;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(170, 130, 45, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(170, 130, 45, 0.08) 1px, transparent 1px);
-  background-size: 58px 58px;
-  mask-image: linear-gradient(to bottom, black, transparent 85%);
-  pointer-events: none;
-}
-
-.navbar,
-.hero-grid {
-  position: relative;
-  z-index: 2;
+  background: linear-gradient(135deg, #fffaf0 0%, #f7ead2 45%, #ffffff 100%);
 }
 
 .navbar {
@@ -90,7 +67,6 @@ a {
   color: #ffffff;
   background: linear-gradient(135deg, #c99b3c, #805b18);
   font-weight: 800;
-  box-shadow: 0 14px 35px rgba(145, 103, 31, 0.22);
 }
 
 .hero-grid {
@@ -143,19 +119,13 @@ a {
 
 .primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 22px 48px rgba(145, 103, 31, 0.35);
 }
 
 .secondary {
   border: 1px solid rgba(135, 98, 29, 0.24);
   color: #4b3511;
   background: rgba(255,255,255,0.72);
-  backdrop-filter: blur(14px);
   font-weight: 700;
-}
-
-.secondary:hover {
-  background: #ffffff;
 }
 
 .hero-stats {
@@ -171,7 +141,6 @@ a {
   border: 1px solid rgba(175, 132, 45, 0.22);
   background: rgba(255,255,255,0.72);
   border-radius: 20px;
-  backdrop-filter: blur(14px);
   box-shadow: 0 18px 45px rgba(70, 46, 12, 0.08);
 }
 
@@ -211,8 +180,7 @@ a {
   right: 32px;
   padding: 22px;
   border-radius: 24px;
-  background: rgba(255,255,255,0.86);
-  backdrop-filter: blur(18px);
+  background: rgba(255,255,255,0.9);
   border: 1px solid rgba(175, 132, 45, 0.22);
   box-shadow: 0 18px 45px rgba(70, 46, 12, 0.16);
 }
@@ -256,9 +224,7 @@ a {
 
 .services-section {
   max-width: none;
-  background:
-    radial-gradient(circle at 76% 14%, rgba(216, 173, 84, 0.20), transparent 28%),
-    linear-gradient(180deg, #ffffff, #fbf1df);
+  background: linear-gradient(180deg, #ffffff, #fbf1df);
   border-top: 1px solid rgba(175, 132, 45, 0.16);
   border-bottom: 1px solid rgba(175, 132, 45, 0.16);
 }
@@ -283,7 +249,7 @@ a {
 .gallery-card,
 .calculator-box,
 .contact-box {
-  background: rgba(255,255,255,0.82);
+  background: rgba(255,255,255,0.9);
   border: 1px solid rgba(175, 132, 45, 0.20);
   border-radius: 26px;
   box-shadow: 0 24px 70px rgba(70, 46, 12, 0.08);
@@ -291,14 +257,6 @@ a {
 
 .card {
   padding: 28px;
-  transition: 0.25s ease;
-}
-
-.card:hover,
-.gallery-card:hover,
-.cert-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(175, 132, 45, 0.42);
 }
 
 .card h3 {
@@ -321,7 +279,6 @@ a {
 
 .cert-card {
   padding: 32px;
-  transition: 0.25s ease;
 }
 
 .cert-card h3 {
@@ -339,7 +296,6 @@ a {
 
 .gallery-card {
   overflow: hidden;
-  transition: 0.25s ease;
 }
 
 .gallery-card img {
