@@ -21,6 +21,8 @@ a {
   color: inherit;
 }
 
+/* HERO */
+
 .hero {
   min-height: 92vh;
   padding: 32px 8%;
@@ -184,6 +186,8 @@ a {
   font-weight: 700;
 }
 
+/* TICKER */
+
 .ticker {
   overflow: hidden;
   background: #08162d;
@@ -218,6 +222,8 @@ a {
     transform: translateX(-50%);
   }
 }
+
+/* GENERAL SECTIONS */
 
 .section {
   padding: 95px 8%;
@@ -255,6 +261,12 @@ a {
   text-align: left;
 }
 
+.section-intro {
+  max-width: 780px;
+}
+
+/* DIAMONDS */
+
 .diamonds-section {
   max-width: none;
   background: linear-gradient(180deg, #f8f6ef, #ffffff);
@@ -285,7 +297,8 @@ a {
 .approach-card,
 .contact-box,
 .office-panel,
-.request-form {
+.request-form,
+.network-card {
   background: #f8f6ef;
   border: 1px solid rgba(205, 174, 101, 0.36);
   border-radius: 4px;
@@ -297,12 +310,13 @@ a {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   display: flex;
   flex-direction: column;
-  min-height: 560px;
+  min-height: 545px;
 }
 
 .diamond-card:hover,
 .cert-card:hover,
-.approach-card:hover {
+.approach-card:hover,
+.network-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 30px 80px rgba(8, 22, 45, 0.10);
 }
@@ -325,13 +339,13 @@ a {
 
 .diamond-card img {
   width: calc(100% - 36px);
-  height: 155px;
+  height: 150px;
   object-fit: contain;
   display: block;
-  margin: 0 18px 18px;
-  background: #ffffff;
-  border: 1px solid rgba(205, 174, 101, 0.28);
-  padding: 12px;
+  margin: 0 18px 22px;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .tag {
@@ -345,7 +359,8 @@ a {
 
 .diamond-card h3,
 .approach-card h3,
-.office-panel h3 {
+.office-panel h3,
+.network-card h3 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 30px;
   color: #0b1b35;
@@ -355,7 +370,8 @@ a {
 
 .diamond-card p,
 .approach-card p,
-.office-panel p {
+.office-panel p,
+.network-card p {
   font-size: 16px;
   color: #52698d;
 }
@@ -363,27 +379,28 @@ a {
 .mini-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px 18px;
   margin-top: auto;
   padding-top: 18px;
 }
 
 .mini-tags span {
-  padding: 8px 10px;
-  border-radius: 999px;
-  background: #ffffff;
   color: #0b1b35;
-  border: 1px solid rgba(205, 174, 101, 0.35);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 800;
+  position: relative;
 }
+
+.mini-tags span:not(:last-child)::after {
+  content: "·";
+  color: #c4a45d;
+  margin-left: 18px;
+}
+
+/* CERTIFICATIONS */
 
 .certification-section {
   text-align: left;
-}
-
-.section-intro {
-  max-width: 780px;
 }
 
 .cert-grid {
@@ -407,6 +424,8 @@ a {
 .cert-card p {
   font-size: 15px;
 }
+
+/* REQUEST FORM */
 
 .request-section {
   max-width: 1180px;
@@ -449,6 +468,8 @@ a {
   border: none;
   cursor: pointer;
 }
+
+/* OFFICES */
 
 .offices-section {
   max-width: none;
@@ -504,6 +525,8 @@ a {
   gap: 18px;
 }
 
+/* QUOTE */
+
 .quote-section {
   padding: 90px 8%;
   background: #08162d;
@@ -530,9 +553,25 @@ a {
   font-size: 12px;
 }
 
+/* ADDITIONAL SOURCING NETWORK */
+
 .additional-section {
   max-width: 1180px;
 }
+
+.network-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 36px;
+}
+
+.network-card {
+  padding: 30px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* CONTACT */
 
 .contact-box {
   padding: 34px;
@@ -549,6 +588,8 @@ a {
 .contact-box strong {
   color: #0b1b35;
 }
+
+/* MAP */
 
 .map-section {
   background: #ffffff;
@@ -570,6 +611,8 @@ a {
   display: block;
   filter: grayscale(15%);
 }
+
+/* FOOTER */
 
 footer {
   padding: 40px 8%;
@@ -604,6 +647,8 @@ footer p {
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
+
+/* RESPONSIVE */
 
 @media (max-width: 1100px) {
   .nav-links {
@@ -644,7 +689,8 @@ footer p {
   .cert-grid,
   .request-section,
   .office-layout,
-  .contact-section {
+  .contact-section,
+  .network-grid {
     grid-template-columns: 1fr;
   }
 
