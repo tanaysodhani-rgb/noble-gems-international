@@ -35,24 +35,25 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 105px;
+  margin-bottom: 95px;
   border-top: 1px solid rgba(205, 174, 101, 0.65);
   border-bottom: 1px solid rgba(205, 174, 101, 0.65);
-  padding: 18px 0;
+  padding: 16px 0;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   color: #0b1b35;
 }
 
 .logo-mark {
-  width: 54px;
-  height: 54px;
+  width: 76px;
+  height: 76px;
   object-fit: contain;
   display: block;
+  flex-shrink: 0;
 }
 
 .brand span {
@@ -606,19 +607,6 @@ footer {
   align-items: flex-start;
 }
 
-.footer-brand {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-.footer-logo {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
 footer strong {
   font-family: 'Cormorant Garamond', serif;
   color: #f8f6ef;
@@ -654,8 +642,8 @@ footer p {
   }
 
   .logo-mark {
-    width: 48px;
-    height: 48px;
+    width: 68px;
+    height: 68px;
   }
 }
 
@@ -671,7 +659,7 @@ footer p {
   }
 
   .navbar {
-    margin-bottom: 75px;
+    margin-bottom: 70px;
   }
 
   .brand span {
@@ -679,8 +667,8 @@ footer p {
   }
 
   .logo-mark {
-    width: 42px;
-    height: 42px;
+    width: 58px;
+    height: 58px;
   }
 
   .hero h1 {
@@ -721,10 +709,6 @@ footer p {
   }
 
   footer {
-    flex-direction: column;
-  }
-
-  .footer-brand {
     flex-direction: column;
   }
 }
