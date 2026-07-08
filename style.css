@@ -23,7 +23,7 @@ a {
 
 .hero {
   min-height: 92vh;
-  padding: 32px 8%;
+  padding: 30px 8%;
   background:
     radial-gradient(circle at 78% 18%, rgba(214, 187, 122, 0.22), transparent 28%),
     linear-gradient(135deg, #f8f6ef 0%, #ffffff 52%, #f0eadc 100%);
@@ -35,34 +35,49 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 95px;
+  margin-bottom: 88px;
   border-top: 1px solid rgba(205, 174, 101, 0.65);
   border-bottom: 1px solid rgba(205, 174, 101, 0.65);
-  padding: 16px 0;
+  padding: 18px 0;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 22px;
   color: #0b1b35;
 }
 
 .logo-mark {
-  width: 76px;
-  height: 76px;
+  width: 96px;
+  height: 96px;
   object-fit: contain;
   display: block;
   flex-shrink: 0;
 }
 
-.brand span {
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-text span {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 34px;
-  letter-spacing: 0.2px;
+  font-size: 44px;
+  letter-spacing: -0.4px;
   color: #0b1b35;
-  font-weight: 600;
-  line-height: 1.05;
+  font-weight: 700;
+  line-height: 0.95;
+}
+
+.brand-text small {
+  margin-top: 9px;
+  font-size: 12px;
+  color: #c4a45d;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
 }
 
 .nav-links {
@@ -631,19 +646,19 @@ footer p {
   letter-spacing: 1.2px;
 }
 
-@media (max-width: 1100px) {
-  .nav-links {
-    gap: 12px;
-    font-size: 11px;
-  }
-
-  .brand span {
-    font-size: 28px;
+@media (max-width: 1200px) {
+  .brand-text span {
+    font-size: 38px;
   }
 
   .logo-mark {
-    width: 68px;
-    height: 68px;
+    width: 86px;
+    height: 86px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 11px;
   }
 }
 
@@ -654,21 +669,31 @@ footer p {
     min-height: 86vh;
   }
 
-  .nav-links a:not(.nav-button) {
-    display: none;
-  }
-
   .navbar {
     margin-bottom: 70px;
   }
 
-  .brand span {
-    font-size: 23px;
+  .nav-links a:not(.nav-button) {
+    display: none;
+  }
+
+  .brand {
+    gap: 14px;
+  }
+
+  .brand-text span {
+    font-size: 30px;
+  }
+
+  .brand-text small {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 7px;
   }
 
   .logo-mark {
-    width: 58px;
-    height: 58px;
+    width: 68px;
+    height: 68px;
   }
 
   .hero h1 {
@@ -710,5 +735,20 @@ footer p {
 
   footer {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand-text span {
+    font-size: 24px;
+  }
+
+  .logo-mark {
+    width: 58px;
+    height: 58px;
+  }
+
+  .brand-text small {
+    display: none;
   }
 }
