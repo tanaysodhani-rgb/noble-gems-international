@@ -41,7 +41,21 @@ a {
   padding: 18px 0;
 }
 
-.logo {
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #0b1b35;
+}
+
+.logo-mark {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  display: block;
+}
+
+.brand span {
   font-family: 'Cormorant Garamond', serif;
   font-size: 34px;
   letter-spacing: 0.2px;
@@ -592,6 +606,19 @@ footer {
   align-items: flex-start;
 }
 
+.footer-brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.footer-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 footer strong {
   font-family: 'Cormorant Garamond', serif;
   color: #f8f6ef;
@@ -622,8 +649,13 @@ footer p {
     font-size: 11px;
   }
 
-  .logo {
+  .brand span {
     font-size: 28px;
+  }
+
+  .logo-mark {
+    width: 48px;
+    height: 48px;
   }
 }
 
@@ -642,8 +674,13 @@ footer p {
     margin-bottom: 75px;
   }
 
-  .logo {
+  .brand span {
     font-size: 23px;
+  }
+
+  .logo-mark {
+    width: 42px;
+    height: 42px;
   }
 
   .hero h1 {
@@ -684,6 +721,10 @@ footer p {
   }
 
   footer {
+    flex-direction: column;
+  }
+
+  .footer-brand {
     flex-direction: column;
   }
 }
