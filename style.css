@@ -44,13 +44,13 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 24px;
   color: #0b1b35;
 }
 
 .logo-mark {
-  width: 96px;
-  height: 96px;
+  width: 112px;
+  height: 112px;
   object-fit: contain;
   display: block;
   flex-shrink: 0;
@@ -64,15 +64,15 @@ a {
 
 .brand-text span {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 44px;
-  letter-spacing: -0.4px;
+  font-size: 52px;
+  letter-spacing: -0.8px;
   color: #0b1b35;
   font-weight: 700;
-  line-height: 0.95;
+  line-height: 0.92;
 }
 
 .brand-text small {
-  margin-top: 9px;
+  margin-top: 10px;
   font-size: 12px;
   color: #c4a45d;
   text-transform: uppercase;
@@ -135,10 +135,10 @@ a {
 
 .hero h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(52px, 7.6vw, 100px);
+  font-size: clamp(46px, 6.6vw, 84px);
   line-height: 0.98;
   margin-bottom: 30px;
-  letter-spacing: -1.8px;
+  letter-spacing: -1.5px;
   color: #0b1b35;
   font-weight: 600;
   max-width: 1100px;
@@ -648,12 +648,12 @@ footer p {
 
 @media (max-width: 1200px) {
   .brand-text span {
-    font-size: 38px;
+    font-size: 44px;
   }
 
   .logo-mark {
-    width: 86px;
-    height: 86px;
+    width: 94px;
+    height: 94px;
   }
 
   .nav-links {
@@ -682,7 +682,7 @@ footer p {
   }
 
   .brand-text span {
-    font-size: 30px;
+    font-size: 34px;
   }
 
   .brand-text small {
@@ -692,8 +692,8 @@ footer p {
   }
 
   .logo-mark {
-    width: 68px;
-    height: 68px;
+    width: 78px;
+    height: 78px;
   }
 
   .hero h1 {
@@ -740,12 +740,12 @@ footer p {
 
 @media (max-width: 560px) {
   .brand-text span {
-    font-size: 24px;
+    font-size: 27px;
   }
 
   .logo-mark {
-    width: 58px;
-    height: 58px;
+    width: 64px;
+    height: 64px;
   }
 
   .brand-text small {
