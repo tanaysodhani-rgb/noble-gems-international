@@ -427,7 +427,7 @@ a {
 
 .fancy-image-row img {
   width: 100%;
-  height: 170px;
+  height: 140px;
   object-fit: contain;
   display: block;
   background: transparent;
@@ -727,7 +727,7 @@ footer p {
   }
 
   .fancy-image-row img {
-    height: 150px;
+    height: 125px;
   }
 }
 
@@ -798,7 +798,7 @@ footer p {
   }
 
   .fancy-image-row img {
-    height: 140px;
+    height: 130px;
   }
 
   .office-details div {
@@ -840,6 +840,6 @@ footer p {
   }
 
   .fancy-image-row img {
-    height: 160px;
+    height: 150px;
   }
 }
