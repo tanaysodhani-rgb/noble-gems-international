@@ -398,6 +398,38 @@ a {
   color: #52698d;
 }
 
+.diamond-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+  margin-top: 24px;
+}
+
+.single-image-grid {
+  max-width: 360px;
+}
+
+.diamond-image-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #ffffff;
+  border: 1px solid rgba(205, 174, 101, 0.28);
+  border-radius: 4px;
+  padding: 10px;
+  display: block;
+}
+
+.future-gallery-note {
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px dashed rgba(205, 174, 101, 0.55);
+  color: #52698d;
+  font-size: 14px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.55);
+}
+
 .specific-requirement-text {
   margin-top: 34px;
 }
@@ -742,6 +774,10 @@ footer p {
     min-height: auto;
   }
 
+  .single-image-grid {
+    max-width: 330px;
+  }
+
   .office-details div {
     flex-direction: column;
     gap: 4px;
@@ -769,5 +805,9 @@ footer p {
   .brand-text small {
     font-size: 10px;
     letter-spacing: 2px;
+  }
+
+  .single-image-grid {
+    max-width: 100%;
   }
 }
